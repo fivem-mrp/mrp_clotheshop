@@ -49,7 +49,7 @@ setInterval(() => {
 on('mrp:clotheshop:show', () => {
     console.log('Opening cloth shop');
 
-    let config = {
+    let cfg = {
         ped: false,
         headBlend: false,
         faceFeatures: false,
@@ -76,6 +76,7 @@ on('mrp:clotheshop:show', () => {
                     console.log('Saved and paid for');
                     console.log(JSON.stringify(appearance));
                 } else {
+                    console.log("Can't afford cloths");
                     emit('chat:addMessage', {
                         template: '<div class="chat-message nonemergency">{0}</div>',
                         args: [
@@ -87,6 +88,6 @@ on('mrp:clotheshop:show', () => {
             } else {
                 console.log('Canceled cloth shopping');
             }
-        }, config);
+        }, cfg);
     }
 });
