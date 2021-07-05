@@ -1,0 +1,21 @@
+{
+    "helpText1": "Press ~INPUT_PICKUP~ to use the shop ~b~",
+    "showBlips": true,
+    "blipColor": 11,
+    "shops": [
+        {"name":"Suburban", "id":73, "x":72.3, "y":-1399.1, "z":28.4},
+        {"name":"Suburban", "id":73, "x":-703.8, "y":-152.3, "z":36.4},
+        {"name":"Suburban", "id":73, "x":-167.9, "y":-299.0, "z":38.7},
+        {"name":"Suburban", "id":73, "x":428.7, "y":-800.1, "z":28.5},
+        {"name":"Suburban", "id":73, "x":-829.4, "y":-1073.7, "z":10.3},
+        {"name":"Suburban", "id":73, "x":-1447.8, "y":-242.5, "z":48.8},
+        {"name":"Suburban", "id":73, "x":11.6, "y":6514.2, "z":30.9},
+        {"name":"Suburban", "id":73, "x":123.6, "y":-219.4, "z":53.6},
+        {"name":"Suburban", "id":73, "x":1696.3, "y":4829.3, "z":41.1},
+        {"name":"Suburban", "id":73, "x":618.1, "y":2759.6, "z":41.1},
+        {"name":"Suburban", "id":73, "x":1190.6, "y":2713.4, "z":37.2},
+        {"name":"Suburban", "id":73, "x":-1193.4, "y":-772.3, "z":16.3},
+        {"name":"Suburban", "id":73, "x":-3172.5, "y":1048.1, "z":19.9},
+        {"name":"Suburban", "id":73, "x":-1108.4, "y":2708.9, "z":18.1}
+    ]
+}
