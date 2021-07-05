@@ -8,7 +8,7 @@ while (MRP_CLIENT == null) {
 
 configFile = LoadResourceFile(GetCurrentResourceName(), 'config/config.json');
 
-config = JSON.parse(configFile);
+const config = JSON.parse(configFile);
 
 if (config.showBlips) {
     for (let v of config.shops) {
