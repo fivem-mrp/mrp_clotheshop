@@ -1,7 +1,9 @@
 {
     "helpText1": "Press ~INPUT_PICKUP~ to use the shop ~b~",
+    "poor": "You are poor and can't afford any clothes",
     "showBlips": true,
     "blipColor": 11,
+    "clothPrice": 250,
     "shops": [
         {"name":"Suburban", "id":73, "x":72.3, "y":-1399.1, "z":28.4},
         {"name":"Suburban", "id":73, "x":-703.8, "y":-152.3, "z":36.4},
