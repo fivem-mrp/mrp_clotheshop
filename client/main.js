@@ -40,7 +40,7 @@ setInterval(() => {
         MRP_CLIENT.displayHelpText(config.helpText1);
 
         if (IsControlJustPressed(1, 38)) {
-            emit('mrp:banking:ui:show');
+            emit('mrp:clotheshop:show');
         }
     }
 }, 1);
