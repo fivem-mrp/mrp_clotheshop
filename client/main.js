@@ -36,13 +36,45 @@ function nearShop() {
 
 setInterval(() => {
     if (nearShop()) {
-        //TODO add radial menu for changing and adding outfits
+        let char = MRP_CLIENT.GetPlayerData();
+        if (char && char.outfits) {
+            let submenu = [];
+            submenu.push({
+                id: 'outfits_add',
+                text: config.outfitsAdd,
+                action: 'https://mrp_clotheshop/outfit_add'
+            });
+            submenu.push({
+                id: 'outfits_remove',
+                text: config.outfitsRemove,
+                action: 'https://mrp_clotheshop/outfit_remove'
+            });
+            for (let outfit of char.outfits) {
+                submenu.push({
+                    id: outfit.name.replaceAll(" ", "_"), //replace spaces for underscore
+                    text: outfit.name,
+                    action: 'https://mrp_clotheshop/outfit_use'
+                });
+            }
+
+            emit('mrp:radial_menu:addMenuItem', {
+                id: 'outfits',
+                text: config.outfits,
+                submenu: submenu,
+                action: 'https://mrp_clotheshop/outfit_add'
+            });
+        }
+
         MRP_CLIENT.displayHelpText(config.helpText1);
 
         if (IsControlJustPressed(1, 38)) {
             console.log(`Open shop menu`);
             emit('mrp:clotheshop:show');
         }
+    } else {
+        emit('mrp:radial_menu:removeMenuItem', {
+            id: 'outfits'
+        });
     }
 }, 1);
 

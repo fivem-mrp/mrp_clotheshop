@@ -1,6 +1,9 @@
 {
     "helpText1": "Press ~INPUT_PICKUP~ to use the shop ~b~",
     "poor": "You are poor and can't afford any clothes",
+    "outfits": "Outfits",
+    "outfitsAdd": "Add outfit",
+    "outfitsRemove": "Remove outfit",
     "showBlips": true,
     "blipColor": 11,
     "clothPrice": 250,
