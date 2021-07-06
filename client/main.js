@@ -105,6 +105,20 @@ on('mrp:clotheshop:outfit_use', (data) => {
 
     if (appearance) {
         exports["fivem-appearance"].setPedAppearance(PlayerPedId(), appearance);
+
+        //load tattoos
+        ClearPedDecorations(PlayerPedId());
+        if (char.tattoos) {
+            for (let v of char.tattoos) {
+                if (v.Count) {
+                    for (let i = 0; i < v.Count; i++) {
+                        SetPedDecoration(PlayerPedId(), v.collection, v.nameHash);
+                    }
+                } else {
+                    SetPedDecoration(PlayerPedId(), v.collection, v.nameHash);
+                }
+            }
+        }
     }
 });
 
